@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>PE - Knowledge DB</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/peico.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container px-lg-5">
+                <a class="navbar-brand" href="#!">Providence Engraving Knowledge Database</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Ref.html">Quick Ref Links</a></li>
+                        <li class="nav-item"><a class="nav-link" href="taskmenu.html">Task Menu</a></li>
+                        <li class="nav-item"><a class="nav-link" href="workflows.html">Workflows</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Header-->
+        <header class="py-5">
+            <div class="container px-lg-5">
+                <div class="p-4 p-lg-5 bg-light rounded-3 text-center">
+                    <div class="m-4 m-lg-5">
+                        <h1 class="display-5 fw-bold">Administrative Tasks</h1>
+                        <br><br>
+                        <a class="btn btn-primary btn-lg" href="index.html">HOME</a><br><br>
+                        <a class="btn btn-primary btn-sm" href="#markordersshipped">Mark Orders Shipped</a>
+                        <a class="btn btn-primary btn-sm" href="#inventory">Inventory</a>
+                        <a class="btn btn-primary btn-sm" href="#salesreport">Create Sales Report</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Mark AMZ Orders Shipped-->
+        <section class="pt-4">
+            <div class="container px-lg-5">
+                <div class="m-4 m-lg-5">
+                    <h2 class="display-5 fw-bold" id="markordersshipped">Marking Amazon Orders as Shipped</h2>
+                    <p class="fs-4">Any Amazon Orders Pet tag orders that ship in an envelope and not parcel, need to manually be marked as "Shipped" using the process below.</p>
+                    <p class="fs-4">*BEFORE STARTING: Make sure all labels have been printed for the day before moving forward (all Exp, Swar, Stain, 2 or more slide or 3 or more pet tags, all Office Products)</p>
+                    <ol> 
+                        <li class="fs-4">Log into Seller Central in Amazon.</li>
+                        <li class="fs-4">Go to Manage Orders in Amazon (Menu top left of screen > Orders > Manage Orders)</li>
+                        <li class="fs-4">Make sure you're in the “Unshipped” orders tab</li>
+                        <li class="fs-4">Apply the following filters:</li>
+                        <ul>
+                            <li class="fs-4">Date Range: Last 365 Days (to ensure you get any orders with an old date if they were pending)</li>
+                            <li class="fs-4">Sort by: Ship-by date (ascending)</li>
+                            <li class="fs-4">Orders per page: 100</li>
+                        </ul>
+                        <li class="fs-4">At the top of the “Order date” column on the left, select the check box to select all of the orders on the page (we are only marking the orders that are “due out” that day. Confirm this by checking the Order type” column. The “Ship by” date should be the current day. Do NOT mark orders shipped that are not due out that day.)</li>
+                        <li class="fs-4">On keyboard, type CTRL+F to bring up the search/find feature. In this step, we're checking for any orders that should have already had a label printed, by searching for the following terms/numbers:</li>
+                        <ul>
+                            <li class="fs-4">“badge” - all badge orders should have a label</li>
+                            <li class="fs-4">“plate” - all name plate orders should have a label</li>
+                            <li class="fs-4">“stain” - orders with more than 2 should have a label</li>
+                            <li class="fs-4">“slide” - orders with more than 2 should have a label</li>
+                            <li class="fs-4">“swar” - all Swarovski orders should have a label</li>
+                            <li class="fs-4">“exp” - all expedited orders should have a label</li>
+                            <li class="fs-4">Every number from 3-9 - all orders with 3 or more pet tags should have a label</li>
+                        </ul>
+                        <li class="fs-4">After doing all of your checks on this page, scroll down the entire page and make sure you didn't miss anything, including any cancellations (if there are any that requested cancellations, cancel them, do NOT mark them shipped)</li>
+                        <li class="fs-4">Scroll back to the top of the page and click “Confirm Shipment(s)”.</li>
+                        <li class="fs-4">Select the following under “Shipping Information”:</li>
+                        <ul>
+                            <li class="fs-4">Ship Date: TODAY'S DATE</li>
+                            <li class="fs-4">Ship From: PROVIDENCE ENGRAVING LLC</li>
+                            <li class="fs-4">Carrier: USPS</li>
+                            <li class="fs-4">Shipping Service: USPS First Class Mail Envelopes</li>
+                        </ul>
+                        <li class="fs-4">Scroll to the end of the page and select “Confirm Shipment”</li>
+                        <li class="fs-4">Repeat steps 5-10, until all orders due out today are marked shipped.</li>
+                    </ol>                                                     
+                </div>
+                <p><a href="#navbarSupportedContent">Back to Top of Page</a></p>
+            </div>
+        </section>
+        <!-- Inventory-->
+        <section class="pt-4">
+            <div class="container px-lg-5">
+                <div class="m-4 m-lg-5">
+                    <h2 class="display-5 fw-bold" id="inventory">Inventory</h2>
+                    <p class="fs-4">All current inventory information can be found here ➝<a href="https://app.clickup.com/2242844/v/f/74299440/4247832" target="_blank">ClickUp Inventory SOP</a>  
+                        <br>Most of the inventory is done on a Google Sheet, but I have them linked in ClickUp for quick, easy access. The various sheets are near the top of the page with the little “G” symbol next to it.
+                        <br>To access vendor information (logins, phone numbers, websites, account numbers, etc.), In Clickup ➝ Management > Inventory > Vendor Information > Vendor Information
+                        <a href="https://docs.google.com/spreadsheets/d/17LpL7m0EYLAuQ1QuhIRMP3-F6KBchvZK17DRxqMbQvw/edit?gid=830535816#gid=830535816" target="_blank">Link to Inventory Google Sheet</a>
+                    </p><br>
+                    <h3>TO ORDER ONLINE</h3>
+                        Click the link in the “website” column” and use the login credentials to login to our account. Most of the items are saved to a “favorites” list, otherwise you can find the item by searching the item code. Item codes are located on the google sheet.
+                    <br><br>    
+                    <h3>TO ORDER BY EMAIL</h3>
+                    <ol>    
+                        <li class="fs-4">Go to ClickUp 🡪 Spaces 🡪 Management 🡪 Inventory and click the “Purchase Order” google sheet link near top of page</li>
+                        <li class="fs-4">Open the vendor's sheet you'd like to order from</li>
+                        *The date field should be automatically filled out with today's date
+                        <li class="fs-4">Fill in the PO number space as follows:</li>
+                        *For Johnson Plastics Orders:
+                        <br>*For precut badge orders, use “JPP_TODAYSDATE_PRECUTS”
+                        for example “JPP_042924_PRECUTS”
+                            <br>For misc orders, use “JPP_TODAYSDATE_MISC”
+                            <br>for example “JPP_042924_MISC”
+                            <br>For Trotec Orders:
+                            <br>Use “TRTODAYSDATE” for example “TR042924”
+                            <br>For Digital Supply Orders:
+                            <br>Use “DSTODAYSDATE” for example “DS042924”
+                            <br>For Axelrod Orders:
+                            <br>Use “AXTODAYSDATE” for example “AX042924”
+                        <li class="fs-4">Fill out the items you want to order by selecting items from drop down menu or typing to auto populate.</li>
+                        <li class="fs-4">When you're done filling out the PO, highlight/select everything from the bottom right corner to the top left corner</li>
+                        <li class="fs-4">Select File from the menu 🡪 Download 🡪 PDF 🡪 Export Selected Cells 🡪 Fit to Page 🡪 Export. This saves a PDF to your downloads folder on your desktop.</li>
+                        <li class="fs-4">Compose a new email and send each PDF PO to the email listed on the PO under “NAME” (this information can also be founder under ClickUp 🡪 Spaces 🡪 Management 🡪 Inventory 🡪 Vendor Information). Include the PO# in the subject line and send.</li>
+                    </ol>                                                      
+                </div>
+                <p><a href="#navbarSupportedContent">Back to Top of Page</a></p>
+            </div>
+        </section>
+        <!-- Sales Report-->
+        <section class="pt-4">
+            <div class="container px-lg-5">
+                <div class="m-4 m-lg-5">
+                    <h2 class="display-5 fw-bold" id="salesreport">Create Sales Report</h2>
+                    <p class="fs-4">This should be run weekly on Friday & Contain totals from the previous Fri to Thur.
+                        <br>Scott will fill an order when he receives our sales totals so it is prudent that we get this to him as soon as we have the data.
+                    </p>
+                    <ol>    
+                        <li class="fs-4"></li>
+                    </ol>                                                      
+                </div>
+                <p><a href="#navbarSupportedContent">Back to Top of Page</a></p>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Providence Engraving 2024</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

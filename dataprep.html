@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>PE - Knowledge DB</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/peico.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container px-lg-5">
+                <a class="navbar-brand" href="#!">Providence Engraving Knowledge Database</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!">Quick Ref Links</a></li>
+                        <li class="nav-item"><a class="nav-link" href="taskmenu.html">Task Menu</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!">Workflows</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Header-->
+        <header class="py-5">
+            <div class="container px-lg-5">
+                <div class="p-4 p-lg-5 bg-light rounded-3 text-center">
+                    <div class="m-4 m-lg-5">
+                        <h1 class="display-5 fw-bold">Data Prep Instructions</h1>
+                        <br><br>
+                        <a class="btn btn-primary btn-lg" href="index.html">HOME</a><br><br>
+                        <a class="btn btn-primary btn-sm" href="#runProvAuto">Run ProvAuto</a>
+                        <a class="btn btn-primary btn-sm" href="#updateRmDb">Update Remake DB</a>
+                        <a class="btn btn-primary btn-sm" href="#mergeOffice">Merge Office Packing Lists</a>
+                        <a class="btn btn-primary btn-sm" href="#printpetpack">Print Pet Packing Guides</a><br><br>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- RUN PROVAUTO-->
+        <section class="pt-4">
+            <div class="container px-lg-5">
+                <div class="m-4 m-lg-5">
+                    <h2 class="display-5 fw-bold" id="runProvAuto">Run ProvAuto</h2>
+                    <p class="fs-4">This is the application used to download and prep data for Amazon and Etsy (Through AutoEtsy) orders ProvAuto should be run each morning Mon-Sat and again each day around Noon on Tue-Fri.</p>                           
+                    <ol> 
+                        <li class="fs-4">Open ProvAuto, located in: P:\AMZ-PACKAGE\ProvAuto Or click below:</li>                 
+                        <button class="btn btn-primary btn-sm" onclick="openExcelFile()">Launch ProvAuto</button>                             
+                        <br><br>
+                        <li class="fs-4">Click START in ProvAuto and follow the instructions.</li>
+                    </ol>
+                    <p class="fs-4">*NOTE: If this is your first time running ProvAuto from a new computer follow the steps below to install 7-zip before running:
+                        Go to 7-zip.org by clicking the Download 7zip Link for Windows 32-bit x86
+                        Follow the installation instructions.
+                        During the process it should confirm the file path which should be: C:\Program Files (x86)\7-Zip</p>                                                      
+                </div>
+                <p><a href="#navbarSupportedContent">Back to Top of Page</a></p>
+            </div>
+        </section>
+        <!-- UPDATE RM DB-->
+        <section class="pt-4">
+            <div class="container px-lg-5">
+                <div class="m-4 m-lg-5">
+                    <h2 class="display-5 fw-bold" id="updateRmDb">Update Remake Database</h2>
+                    <p class="fs-4">This is the application used to import previously processed orders and serve as a database for remake orders to be pulled from. This should be run at least once a week.</p>                           
+                    <p class="fs-4">Open the Amazon Order database located in: P:\AMZ-PACKAGE\AmazinPS\AMZ ORDERS, then follow instructions in the program which are as follows:</p>
+                    <ol> 
+                        <li class="fs-4">Press the 'Import Order Data' button. When the import is complete, the 'RECENTLY ADDED FILES' List should be updated with all the files currently in the Dbin folder.</li>
+                        <li class="fs-4">Press ctrl + s or select file -> save.</li>
+                        <li class="fs-4">Delete the data sets from the Dbin folder listed on the 'RECENTLY ADDED FILES' List.</li>
+                        <li class="fs-4">Close the AMZ ORDERS file.</li>
+                    </ol>                                                      
+                </div>
+                <p><a href="#navbarSupportedContent">Back to Top of Page</a></p>
+            </div>
+        </section>
+        <!-- MERGE PLs-->
+        <section class="pt-4">
+            <div class="container px-lg-5">
+                <div class="m-4 m-lg-5">
+                    <h2 class="display-5 fw-bold" id="mergeOffice">Merging Office Packing Lists</h2>
+                    <ol> 
+                        <li class="fs-4">Open the Publisher Template file in : P:\AMZ-PACKAGE\Packing Lists\PL_Creator Office</li>
+                        <li class="fs-4">Click “YES” when asked if you would like to load the previous data source. (*should point to P:\AMZ-PACKAGE\Packing Lists\Sample 9Item PackingList)</li>
+                        <li class="fs-4">Click the "Mailings" Tab and select "Edit Recipient List" (Image 1)</li>
+                        <li class="fs-4">Navigate to the file you'd like to merge. (Will be in the working dates' folder, within the packing list folder)</li>
+                        <li class="fs-4">Select the first table. Make sure "1st row contains headers" is checked. Click OK.</li>
+                        <li class="fs-4">De-select the Sample customer, then Click OK.</li>
+                        <li class="fs-4">In the Mailings tab, click "FINISH AND MERGE", then "MERGE TO NEW PUBLICATION".</li>
+                        <li class="fs-4"> After merging is complete, Save the file as a PDF. Go to File > Save As > Change file type to ".PDF" and save the PDF file in corresponding days Packing List Folder.</li>
+                    </ol>                                                      
+                </div>
+                <p><a href="#navbarSupportedContent">Back to Top of Page</a></p>
+            </div>
+        </section>
+        <!-- Print Pet Pack-->
+        <section class="pt-4">
+            <div class="container px-lg-5">
+                <div class="m-4 m-lg-5">
+                    <h2 class="display-5 fw-bold" id="printpetpack">Print Pet Packing Guides</h2>
+                    <ol> 
+                        <li class="fs-4">Go to the Date Folder in For Production</li>
+                        <li class="fs-4">Open the Pet Packing Guide File inside the Packing List Folder.</li>
+                        <li class="fs-4">Select columns A through V, and press ctrl+p or or go to File > Print.</li>
+                        <li class="fs-4">For Printing Options Select the following:
+                            <ul>
+                                <li>Printer: Print to PDF -OR- Directly to your printer.</li>
+                                <li>Print Selection</li>
+                                <li>Landscape Orientation</li>
+                                <li>Narrow Margins</li>
+                                <li>Fit All Columns on One Page</li>
+                            </ul>
+                        </li>
+                        <li class="fs-4">Press Print. *If you are printing to PDF save the PDF in the PackingList folder for that date.</li>
+                    </ol> 
+                    <img src="assets/printsettings.jpg" alt="Image of Printer Settings" />                                                     
+                </div>
+                <p><a href="#navbarSupportedContent">Back to Top of Page</a></p>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Providence Engraving 2024</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
