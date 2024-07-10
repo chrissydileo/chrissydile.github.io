@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>PE - Knowledge DB</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/peico.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container px-lg-5">
+                <a class="navbar-brand" href="#!">Providence Engraving Knowledge Database</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!">Quick Ref Links</a></li>
+                        <li class="nav-item"><a class="nav-link" href="taskmenu.html">Task Menu</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!">Workflows</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Header-->
+        <header class="py-5">
+            <div class="container px-lg-5">
+                <div class="p-4 p-lg-5 bg-light rounded-3 text-center">
+                    <div class="m-4 m-lg-5">
+                        <h1 class="display-5 fw-bold">Production</h1>
+                        <br><br>
+                        <a class="btn btn-primary btn-lg" href="index.html">HOME</a><br><br>
+                        <a class="btn btn-primary btn-sm" href="#formatpettags">Formatting Pet Tags</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Format Pet Tags-->
+        <section class="pt-4">
+            <div class="container px-lg-5">
+                <div class="m-4 m-lg-5">
+                    <h2 class="display-5 fw-bold" id="formatpettags">Formatting Pet Tags:</h2>
+                    <p class="fs-4"><h3>Formatting Pet Tags for the laser includes using several procedures:</h3> <br>
+                        Tag Flipper will move important data to the non-embossed side of Cat and Paw shaped tags.<br>
+                        PrintMerge in Corel will place the data onto the appropriate lines of the corresponding tag shape.<br>
+                        AutoResizer in Corel will go through each tag of a printmerged file and resize it automatically based on shape and size.<br>
+                        Manual Resizer in Corel is a tool to help you go through tags after AutoResizer and make any needed changes.
+                    </p>                           
+                    <p class="fs-4">Follow the procedures below to format Pet Tag products to be ready for the lasers:</p>
+                    <ol> 
+                        <li class="fs-4">
+                            <h4>Tag Flipper</h4>
+                            <p class="fs-4">Move important data to the non-embossed side of Cat and Paw shaped tags.</p>
+                            <ol>
+                                <li>On the P Drive, go to the 'For Production' Folder: P:\Pet Tags\For Production</li>
+                                <li>Locate the date folder for the data you need to format, and make a COPY of the excel file that says FINISHED</li>
+                                <li>Open the COPY of the FINISHED file and click the 'Tag Flipper' Button.</li>
+                                <li>"Follow the instructions in the Tag Flipper tool. You will be shown data for the front and back engraving for any PAW, SMP, CAT, and SMC tags. These tags are all embossed on the BACK side. </li>
+                                *If the customer entered a majority of the contact info (phone, address, etc.) on the BACK, click FLIP.
+                                <br>*If the tag is fine formatted as is, click NEXT.
+                                <br>*If you accidently flipped, or didn't flip a tag and need to go back, click BACK."
+                                <li>Once you have gone through each tag in each shape, a pop-up will appear asking if you're ready to Create CSV Files. Click YES. This will create 4 new CSV files for these embossed shapes that reflect any changes you made to the data. These files will appear in the same folder as the copied FINISHED files. </li>
+                            </ol>
+                        </li>
+                        <br><br>
+                        <li class="fs-4">
+                            <h4>PrintMerge</h4>
+                            <ol>
+                                <li>Locate the Print Merge File for that product:
+                                    Go to: P:\AMZ-PACKAGE\COREL\PET (Or click the link below) 
+                                    Then select the Corel file that starts with “PM-”, and ends with the product you are merging. (example: PM-HYD would be used to merge the HYD csv file)</li>
+                                <li>After opening the corresponding file, select the 'File' >  'Print Merge' > 'Create/Load Merge Fields...' (IMAGE A - Green Oval)</li>
+                                <li>In the Print Merge Wizard: Select Import text from a file or ODBC data source, then click NEXT.</li>
+                                <li>On the next screen navigate to the corresponding CSV file in the date folder’s Pet CSV folder. Be sure to change to file type (Circled in purple IMG B) to Comma Separated Files (.CSV) or the files will not show in the explorer. *NOTE: If you are formatting PAW, SMP, CAT, or SMC, be sure to use the flipped CSV file that you created in part 1.</li>
+                                <li>Click NEXT 2 more times, then FINISH.</li>
+                                <li>Go back to the Print Merge Menu (IMAGE A), and select 'Merge to New Document.' (Red Oval)</li>
+                                <br>*The new document is now ready for AutoResizer.
+                                
+                            </ol>
+                        </li>
+                        <br><br>
+                        <li class="fs-4">
+                            <h4>AutoResizer</h4>
+                            <ol>
+                                <li>Once a CSV file has been merged with it's Corel Template, click the 'openprovmenu' Button on your tool bar. (IMAGE C - Blue Circle)</li> 
+                                <li>In the Product Formatting Menu that opens, select push the 'PET: RESIZE' Button.</li>
+                                <li>Select the shape you are formatting from the drop down menu, Then press 'GO'.</li>
+                                <li>Save the File in the corresponding date folder in For Production.</li>
+                                <br>*The document is now ready for Manual Resizing to check for needed edits before sending to the laser.
+                            </ol>
+                        </li>
+                        <br><br>
+                        <li class="fs-4">
+                            <h4>Manual Resizer</h4>
+                            <ol>
+                                <li></li>
+                            </ol>
+                        </li>
+                    </ol>                                                      
+                </div>
+                <p><a href="#navbarSupportedContent">Back to Top of Page</a></p>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Providence Engraving 2024</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
